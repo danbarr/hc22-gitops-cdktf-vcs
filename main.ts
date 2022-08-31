@@ -17,7 +17,8 @@ class MyStack extends TerraformStack {
       ami: vars.amiId,
       instanceType: "t3.small",
       tags: {
-        Name: "CDKTF-Demo"
+        Name: "CDKTF-Demo",
+        Environment: "prod"
       }
     });
 
