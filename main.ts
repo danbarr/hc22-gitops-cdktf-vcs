@@ -1,5 +1,5 @@
 import { Construct } from "constructs";
-import { App, TerraformStack, TerraformOutput, CloudBackend, NamedCloudWorkspace } from "cdktf";
+import { App, TerraformStack, TerraformOutput } from "cdktf";
 import { AwsProvider, ec2 } from "@cdktf/provider-aws";
 import { Tfvars } from "./variables"
 
@@ -29,10 +29,5 @@ class MyStack extends TerraformStack {
 }
 
 const app = new App();
-const stack = new MyStack(app, "hc22-gitops-cdktf");
-new CloudBackend(stack, {
-  hostname: "app.terraform.io",
-  organization: "dbarr-org",
-  workspaces: new NamedCloudWorkspace("hc22-gitops-cdktf")
-});
+new MyStack(app, "hc22-gitops-cdktf");
 app.synth();

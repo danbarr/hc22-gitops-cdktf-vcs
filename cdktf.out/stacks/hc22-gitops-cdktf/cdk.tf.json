@@ -1,7 +1,7 @@
 {
   "//": {
     "metadata": {
-      "backend": "cloud",
+      "backend": "local",
       "stackName": "hc22-gitops-cdktf",
       "version": "0.12.2"
     },
@@ -42,11 +42,9 @@
     }
   },
   "terraform": {
-    "cloud": {
-      "hostname": "app.terraform.io",
-      "organization": "dbarr-org",
-      "workspaces": {
-        "name": "hc22-gitops-cdktf"
+    "backend": {
+      "local": {
+        "path": "/home/runner/work/hc22-gitops-cdktf-vcs/hc22-gitops-cdktf-vcs/terraform.hc22-gitops-cdktf.tfstate"
       }
     },
     "required_providers": {
