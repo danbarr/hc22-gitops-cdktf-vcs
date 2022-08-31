@@ -18,7 +18,7 @@ class MyStack extends TerraformStack {
       instanceType: "t3.small",
       tags: {
         Name: "CDKTF-Demo",
-        Environment: "prod"
+        Environment: "dev"
       }
     });
 
