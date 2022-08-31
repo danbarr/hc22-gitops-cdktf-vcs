@@ -33,9 +33,9 @@
           }
         },
         "ami": "ami-08a9dc8f6d1c4f806",
-        "instance_type": "t3.small",
+        "instance_type": "t3.micro",
         "tags": {
-          "Environment": "prod",
+          "Environment": "dev",
           "Name": "CDKTF-Demo"
         }
       }
