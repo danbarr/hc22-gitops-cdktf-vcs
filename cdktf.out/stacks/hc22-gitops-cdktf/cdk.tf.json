@@ -3,7 +3,7 @@
     "metadata": {
       "backend": "local",
       "stackName": "hc22-gitops-cdktf",
-      "version": "0.17.1"
+      "version": "0.19.2"
     },
     "outputs": {
       "hc22-gitops-cdktf": {
@@ -50,7 +50,7 @@
     "required_providers": {
       "aws": {
         "source": "aws",
-        "version": "4.67.0"
+        "version": "5.31.0"
       }
     }
   }
